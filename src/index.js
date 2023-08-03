@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import "bootstrap/dist/css/bootstrap.min.css"
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // thẻ in hoa chữ cái đầu như vd ở dưới được goi là component. VD là thẻ App ở dưới đó
+
   <React.StrictMode>
     <App />
   </React.StrictMode>
