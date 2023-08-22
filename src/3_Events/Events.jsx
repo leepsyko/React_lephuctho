@@ -19,8 +19,10 @@ export default function Events() {
     const handleShowMessage = (name) => {
         alert(`hello ${name}`)
     }
-
+    
+    // không thể sử dụng onput mà phải thay bằng onchange
     // Sự kiện onChange giống với onPut
+    // có thể viết thẳng onchange vào giống kiểu arrow funtion
 
     const handleChange = (event) => {
         console.log(event.target.value)

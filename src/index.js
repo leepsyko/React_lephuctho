@@ -9,9 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // thẻ in hoa chữ cái đầu như vd ở dưới được goi là component. VD là thẻ App ở dưới đó
 
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
