@@ -1,5 +1,4 @@
 import React from 'react'
-import ShoeItem from '../ShoeShop_EX (EX3)/ShoeItem'
 import ProductItem from './ProductItem'
 
 export default function ProductList({products, onGetProduct,onAddToCart}) {

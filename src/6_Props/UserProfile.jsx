@@ -3,6 +3,7 @@ import React from 'react'
 // trong component luôn có property props dưới kiểu dữ liệu object
 
 // export default function UserProfile(props) {
+  
 export default function UserProfile({name = "unknown", age = 0 , isAdmin = false}) {
 
     // const {name, age , isAdmin} = props

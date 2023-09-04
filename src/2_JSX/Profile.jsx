@@ -11,6 +11,7 @@
 
 // Quy tắc 3: khi muốn viết JavaScript, ta bọc chúng vào cặp ngoặc nhọn {}. VD biến name trong h1 
 
+// style kiểu inline trong JSX được viết dưới dạng object
 
 function Profile() {
     let name = "Tony"

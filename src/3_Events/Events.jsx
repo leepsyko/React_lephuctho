@@ -4,7 +4,7 @@
 
 // react 
 // truyền vào hàm:  <button onClick={handleClick}>Click 1</button>  //  đúng
-// gọi hàm: <button onClick={handleClick}>Click 1</button>          // sai
+// gọi hàm: <button onClick={handleClick()}>Click 1</button>          // sai
 
 // tên hàm có chữ handle đằng trước, đây là quy tắc đặt tên trong react
 
@@ -50,3 +50,8 @@ export default function Events() {
 
     )
 }
+
+
+// Onchange trong html theo dõi sự thay đổi trong ôn được chọn thay đổi theo giá trị
+
+// OnChange tong react thì giống onpit trong html, theo dõi liên tục theo giời gian thực

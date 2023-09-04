@@ -2,7 +2,7 @@ import React from 'react'
 
 // cách viết children trong jsx
 //  Kĩ thuật children
-
+// trong kĩ thuật children, sẽ có 1 props tên children được thêm vô
 
 
 

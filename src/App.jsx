@@ -1,3 +1,7 @@
+import Ref from "./10_Ref/Ref";
+import CustomHook from "./11_CustomHook/CustomHook";
+import Redux from "./12_Redux/Redux";
+import ReduxThunk from "./13_ReduxThunk/ReduxThunk";
 import Welcome from "./1_components/welcome";
 import Profile from "./2_JSX/Profile";
 import Events from "./3_Events/Events";
@@ -7,6 +11,7 @@ import Props from "./6_Props/Props";
 import State from "./7_State/State";
 import Form from "./8_Form/Form";
 import Effect from "./9_Effect/Effect";
+import BusTicket from "./EX_BusTcket/BusTicket";
 import Home from "./EX_HomeLayout (EX1)/Home";
 import Shop from "./EX_ShopLayout (EX2)/Shop";
 import Shopping from "./EX_Shopping (EX5)/Shopping";
@@ -44,16 +49,25 @@ function App() {
 
     // <State/>
 
-    <StateCard/>
+    // <StateCard/>
 
     // <Shopping/>
-
 
     // <Form/>
 
     // <Effect/>
 
     // <UserManagement/>
+
+    // <Ref/>   
+
+    // <CustomHook/>
+
+    // <Redux/>
+
+    <BusTicket/>
+
+    // <ReduxThunk/>
   );
 }
 

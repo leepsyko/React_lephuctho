@@ -1,9 +1,11 @@
 // Hiển thị theo điều kiện
 
-// trong js: null undefined và false sẽ không hiện thị ra gai diện 
+// trong js: null undefined và false sẽ không hiện thị ra giao diện 
 
 
 import React from 'react'
+
+
 
 function UserGreeting() {
     let unreadMessage = 5
@@ -49,7 +51,7 @@ export default function ConditionalRendering() {
 
     // toán tử bậc 3 " ? : "
 
-    //  TOÁN TỬ BẬC 3 ? : 
+    //  TOÁN TỬ BẬC 3   ? : 
     // VD:  {isLoggedIn ? <div>Welcome back</div> : <div>Please Login</div>}
 
     // quy tắc không được viết 2 thẻ đồng cấp html cũng áp dúng cho html lồng trong js
