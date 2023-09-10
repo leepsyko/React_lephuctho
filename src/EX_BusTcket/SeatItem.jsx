@@ -12,17 +12,18 @@ export default function SeatItem({seat,isSelected}) {
   // State quản lý trạng thái có được chọn hay không
   // const [isSelected, setIsSelected] = useState(false)
 
-
-
-
-const handleSelected = () =>{
-  // set là hàm chạy bất đồng bộ nên không lấy giá trị được giá trị mới
-
-  // setIsSelected(!isSelected)
-
-  // dispatch({type: "selectSeat",payload: {...seat, isSelected:!isSelected}})
-
-  dispatch(selectSeat({...seat, isSelected:!isSelected}))
+  
+  
+  const handleSelected = () =>{
+    // set là hàm chạy bất đồng bộ nên không lấy giá trị được giá trị mới
+    
+    // setIsSelected(!isSelected)
+    
+    // dispatch({type: "selectSeat",payload: {...seat, isSelected:!isSelected}})
+    console.log(isSelected)
+    
+    // dispatch(selectSeat({...seat, isSelected:!isSelected}))
+    dispatch({type: "selectSeat",payload:{...seat, isSelected:!isSelected}})
 }
 
 
@@ -39,6 +40,13 @@ const handleSelected = () =>{
   } else {
     classes += "btn-secondary"
   }
+
+// vd cho bài 15 styles thư viện classnames
+
+// cn("btn m-2 btn-secondary",{"btn-danger": seat.isBooked,"btn-success":isSelected})
+
+
+
 
 
   return (

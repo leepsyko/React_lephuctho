@@ -6,11 +6,11 @@ import Ticket from './Ticket'
 
 
 export default function BusTicket() {
-   const {totalPrice}=useSelector((state)=>{
+  const { totalPrice } = useSelector((state) => {
     return state.busTicket
   })
 
-  const handleBook =()=>{
+  const handleBook = () => {
     alert(`Total Price: ${totalPrice}`)
   }
 
@@ -19,15 +19,15 @@ export default function BusTicket() {
       <h1 className='text-center text-primary'>BusTicket</h1>
       <div className="row">
         <div className="col-md-6" >
-          <SeatList seats={data}/>
+          <SeatList seats={data} />
         </div>
         <div className="col-md-6">
-          <Ticket/>
+          <Ticket />
         </div>
       </div>
 
       <div className='text-center'>
-<button className='btn btn-primary ' onClick={handleBook}>Đặt vé</button>
+        <button className='btn btn-primary ' onClick={handleBook}>Đặt vé</button>
       </div>
     </div>
   )

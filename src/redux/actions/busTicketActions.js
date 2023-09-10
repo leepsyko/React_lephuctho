@@ -1,7 +1,7 @@
 // action creator : 1 hàm  return về redux action 
 // sử dụng : selectSeat({...})
 
-import { REMOVE_SEAT, SELECT_SEAT } from "../contants/busTicketContants"
+import { REMOVE_SEAT, SELECT_SEAT } from "../constants/busTicketContants"
 
 export const selectSeat = (seat) =>{
     return {

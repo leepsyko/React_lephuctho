@@ -2,11 +2,10 @@ import { configureStore } from "@reduxjs/toolkit";
 import busTicketReducer from "./redux/reducer/busTicketReducer";
 import counterReducer from "./redux/reducer/counterReducer";
 import todosReducer from "./redux/reducer/todosReducer";
+import postReducer from "./redux/slices/postSlice";
+
 
 // luôn luôn return "sao chép ra mảng mới hoặc object mới"
-
-
-
 
 // const initState = {
 //   selectedSeats: [],
@@ -48,11 +47,16 @@ const store = configureStore({
     counter: counterReducer,
     todos: todosReducer,
     busTicket: busTicketReducer,
+    post: postReducer,
   },
 });
 
+
+export default store;
+
+
 // ================================DEMO==================
-console.log("Store:", store.getState());
+// console.log("Store:", store.getState());
 
 // // hàm adds 1 sự thay đổi trong store. bất cứ khi nào state trong store thay đổi thì sẽ hiện thị sau
 // store.subscribe(() => {
@@ -72,4 +76,3 @@ console.log("Store:", store.getState());
 //
 
 //============== END DEMO ============================================
-export default store;

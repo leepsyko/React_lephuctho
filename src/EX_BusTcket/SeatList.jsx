@@ -11,17 +11,19 @@ export default function SeatList({seats}) {
 
   return (
     <div className='row'>
-        <div className="col-md-12 text-center bg-warning">Driver</div>
+        <div className="col-md-12 text-center bg-warning">Chọn vị trí</div>
 
         {seats.map((seat)=>{
           // Tìm xem ghế hiện tại có nằm trong danh sách ghế đang chọn hay không
           const isSelected = selectedSeats.find(item => item.id === seat.id )
           return (
             <div className='col-md-3 d-flex ' key={seat.id}>
-              <SeatItem seat={seat} isSelected={isSelected}/>
+              <SeatItem seat={seat} isSelected={!!isSelected}/>
             </div>
           )
         })}
     </div>
   )
 }
+
+
